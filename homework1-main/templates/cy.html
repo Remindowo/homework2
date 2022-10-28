@@ -1,0 +1,241 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MyWeb</title>
+        <script>
+            alert("Hello! 歡迎來到這個網站!")
+
+            function startTime(){
+                var today = new Date();
+                var hh = today.getHours();
+                var mm = today.getMinutes();
+                var ss = today.getSeconds();
+                mm = checkTime(mm);
+                ss = checkTime(ss);
+                document.getElementById('clock').innerHTML = hh + ":" + mm + ":" + ss;
+                var timeoutId = setTimeout(startTime, 500);
+                }
+
+                function checkTime(i){
+                if(i < 10) {
+                    i = "0" + i;
+                }
+                return i;
+            }
+
+        </script>
+        <style>
+            @import url(class_CSS.css);
+
+            @keyframes dinosaur {
+                from {background-position: left;}
+                to {background-position: right;}
+            }
+            
+            .anima {
+                background-image: url(http://120.110.112.128/pu/student/CSP/410903432/images/dinosaur.gif);
+                background-size: 100px 100px;
+                background-repeat: no-repeat;
+                background-position: bottom;
+                height: 50px;
+                animation: dinosaur 8s linear infinite;
+            }
+
+            img {
+                border: 1px solid #ddd;
+                border-radius: 10%;
+                border-collapse: collapse;
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            #Body {
+                text-align: left;
+                margin:0px auto;
+                padding: 20px;
+                background-color: white;
+            }
+
+            .right {
+                padding: 115px 0px;
+            }
+
+            .inner {
+                display: flex;
+                align-items: center;
+            }
+
+            .clear-fix {
+                overflow: auto;
+                zoom: 1;
+            }
+
+            .head {
+                background-color:rgb(104, 104, 233);
+                border-radius: 10px;
+                text-align: center;
+            }
+            
+            .ft {
+                text-align:center;
+                padding:10px;
+                background-color: lightgray;
+            }
+            footer {
+                background-color: lightgray;
+            }
+
+            #clock{
+                color:rgb(131, 125, 125);
+                font: 2em sans-serif; 
+                background: rgb(184, 234, 250); 
+                margin: 5px;
+                padding: 5px;
+                border: solid gray 2px; 
+                border-radius: 10px;
+                width:160px;
+                text-align:center;
+                margin: 10px auto;
+            }
+        </style>
+    </head>
+    <body onload="startTime()">
+        <div id="Header">
+            <marquee>歡迎進入我的網站</marquee>
+            <h1 align="center">謝重易的網站</h1>
+                
+            <nav class="menu">
+                
+				
+            </nav>
+
+            <hr class="anima">
+        </div>
+
+        <div id="clock"></div>
+
+        <hr>
+        <div id="Body" class="clear-fix">
+            <div class="left" style="clear: left;">
+                <img src="https://www1.pu.edu.tw/~s1101726/CSP/15.jpg">
+                <img src="https://www1.pu.edu.tw/~s1101726/CSP/16.jpg">
+            </div>
+            <div class="right" class="inner">
+                <h3>MIS工程師</h3>
+				<OL>
+				<LI>興趣何倫碼:I型 研究型（Investigative），R 實做型（Realistic）</LI>
+				<LI>企業內部系統規劃與開發MIS系統的功能，以符合企業需求</LI>				
+				<LI>維護公司網路和資料，並進行備份工作，及防毒</li>
+				<li>配合資訊作業需要，至各單位處理連線相關作業及問題排除</LI>
+				<LI>擔任各項資訊系統整合與維護、及測試工作</li>
+				<LI>負責FireWall、IDS及防毒軟體等資安系統管理防止公司機密外洩以及員工不當使用電腦</LI>
+				<LI>內部網站系統改進與導入</LI>
+				</OL>
+				
+				<BR>
+				<H3>簡易履歷</H3>
+                <p><b>我叫做謝重易，今年大二，來自台北市，就讀靜宜大學資訊管理學系，畢業後先進入中華民國陸軍服役。從小在家人及學校的教導下，養成了負責且獨立自主的性格，並且擁有樂觀及正面思考的個性與人生態度。從小到大的求學過程中，我都是以積極進取的心態取得課業上的好成績，因此我的成績一直都是在班上的前中段。在此同時，我也努力擔任班級的重要幹部。
+舉例來說，我國中期間曾擔任過環保股長。一般而言，這是許多人不願意擔任的職務，除了吃力不討好外，更重要的是，整天必須與垃圾為伍。然而在我擔任股長的期間，我盡全力的把它做好，甚至從中力求「完美」兩字。如此努力的結果，不但獲得許多老師及同學的讚賞，對我來說，同時也是學習對自己與他人負責的最好機會。
+就讀大學期間，我努力地學習系上必修專業知識，因此電腦技能我也增進了不少，如WORD、EXCEL、POEWERPOINT、HTML及JAVA等各項電腦工具及軟體的課程。
+另外我也在各項需要分組的課程中，我也因同組組員看中我的能力或自願而擔任組長的職位，也因此我也是個有領導能力以及重視團隊合作的人。
+這一點，在我畢業進入軍隊服役後也依舊不變，新訓期間我便擔任補給公差的補給頭、游泳助教以及之後下部隊擔任所屬寢室之寢室長，也都源自於此。除了必修課外，我也努力參與系外的選修和通識課程。其中我參加學校的兩門跨領域學程，分別是「人文素養學程」以及「數位音樂學程」，並在畢業時順利修滿學分拿到證書。
+在修課的過程中，我除了再次學習到對自己負責的心態外，我也學習到如何善用並規劃自己的時間，了解什麼時候該做什麼事，並用自己的力量克服一切困難，養成了獨立自主的習慣。
+課外時間，我會將自己的所學運用在打工上，例如擔任靜宜大學大學通識教育中心工讀生，協助學校的課程網頁製作，並且運用暑假空閒時間去業界擔任部落格經營工讀生。閒暇時間，我也會去書店閱讀商業雜誌書籍，如「快樂工作人」等相關書籍來了解現今的職場動態，藉此維持自己的正面思考以及前進動力。
+最後，感謝貴公司撥冗看完這封履歷及自傳。如果貴公司想要一名認真、負責、配合度高、有團隊精神的資訊人員。那麼，就請不要懷疑自己的眼光，相信我一定是最符合貴公司的人才！
+					<BR>
+					
+                </b></p><BR>
+				
+				<H2>二、近程、中程、遠程的生涯規劃</H2>
+                <h4>近程</h4>
+                <ul>
+                    <li>加強外語能力:	英文為國際間通用語言。除了課堂上用心學習,我將從最基本的單字開始,加強記憶,多看、多聽、多說,從生活中磨練英文能力,並且盡力於畢業之前通過英文檢定。</LI>
+					<br>
+					<LI>校園活動參與:
+					對於學校或系上的活動,我也會熱心參與,讓自己有更多不同的表演和比賽經驗,為這四年的大學生活留下美好的回憶!</LI>
+					<BR>
+					<LI>校內社團參與:
+					我會選擇自己感興趣的社團,讓自己在課業之餘,還可以有放鬆心情的時候,並獲得更多課業以外的知識、常識與技能。</LI>
+					</li>
+                    
+                </ul> 
+                <h4>中遠程</h4>
+                <ol>
+                    <li>精進文書處理之能力:
+					在大學,文書處理是必備的基本能力。在空閒時多多摸索、練習 office 的各項操作方式,虛心請教身邊熟悉office 的親朋好友。</LI>
+					<br>
+					享受實務課程:
+					<LI>在三上的校外實習課程,我會盡情參與、認真學習把在書本上學得的知識印證於實習活動中,我相信在實習的日子裡,一定可以學習到更多課本以外的知識。多少會有出乎預料的事情發生,要如何做適當的處理,都是我們在實習時,可以向實習老師學習到的。
+</li>
+                </ol>
+                <h4>背景音樂</h4>
+                <audio src="https://www1.pu.edu.tw/~s1090343/CSP/music/song.mp3"autoplay controls loop></audio>              
+            </div>
+        </div>
+
+        <div style='clear:both;'></div>
+
+        <div id="Body" class="clear-fix">
+            <table style="table-layout: fixed; border: 6px solid black; padding:20px; border-collapse: collapse; width: 95%;" align="center">
+                <tr>
+                    <td style="border: 6px solid black; border-bottom: none;"><h4 class="head">CSS文件使用到的功能</h4>
+                    <td style="border: 6px solid black; border-bottom: none;"><h4 class="head">首頁使用到的CSS功能</h4>
+                    <td style="border: 6px solid black; border-bottom: none;"><h4 class="head">其他網頁使用到的CSS功能</h4>
+                <tr>
+                    <td style="border: 6px solid black; border-top: none;">
+                        <ul style="list-style-type: square;">
+                            <li>類別選擇器和識別碼選擇器</li>
+                            <li>font-size和font-weight設定字型大小粗細</li>
+                            <li>簡寫的字型屬性font</li>
+                            <li>文字對齊方式text-align</li>
+                            <li>文字顏色漸層</li>
+                            <li>設定背景顏色及圖案</li>
+                            <li>設定背景圖案位置</li>
+                            <li>使用float屬性製作文繞圖效果</li>
+                            <li>利用clear屬性限制區塊左右有無float區塊</li>
+                            <li>兩欄式版面</li>
+                        </ul>
+                    </td>
+                    <td style="border: 6px solid black; border-top: none;">
+                        <ul style="list-style-type: square;">
+                            <li>匯入外部的CSS檔案</li>
+                            <li>動畫特效</li>
+                            <li>img border樣式設計</li>
+                            <li>CSS BOX模型</li>
+                            <li>Div垂直置中</li>
+                            <li>CSS無序號清單的項目符號樣式</li>
+                            <li>margin調節網頁內容距離</li>
+                        </ul>
+                    </td>
+                    <td style="border: 6px solid black; border-top: none;">
+                        <ul style="list-style-type: square;">
+                            <li>匯入外部的CSS檔案</li>
+                            <li>margin調節網頁內容距離</li>
+                            <li>border樣式設計</li>
+                            <li>表格設計</li>
+                            <li>Div垂直置中</li>
+                            <li>使用float屬性製作文繞圖效果</li>
+                            <li>設定背景顏色及圖案</li>
+                        </ul>
+                    </td>
+            </table>
+        </div>
+
+        <hr>
+        <footer>
+            <table class="ft" align="center">
+                <tr>
+                    <td>
+                        <p><b>與我聯繫</b>&nbsp;&nbsp;&nbsp;E-mail : s1103026@gm.pu.edu.tw</p>
+                    </td>
+                    <td>
+                        <p><b>音樂素材</b>&nbsp;&nbsp;&nbsp;取自免費資源BGM素材---魔王魂公式</p>
+                    </td>
+            </table>
+        </footer>
+    </body>
+</html>
