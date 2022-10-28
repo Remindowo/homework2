@@ -15,7 +15,7 @@ def index():
     return homepage
 @app.route("/about")
 def course():
-    return render_template("homework.html")
+    return render_template("cy.html")
 @app.route("/mis")
 def mis():
     return "<h1>資訊管理導論</h1>"
